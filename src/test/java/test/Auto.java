@@ -16,12 +16,12 @@ public class Auto {
 
         for (int i = 0 ; i < anch ; i++){
             if (asientos[i] == null ){
-                contAsientos = contAsientos;
+                contadorAsientos = contadorAsientos;
             } else{
                 contAsientos++;
             }
         }
-        return contAsientos;
+        return contadorAsientos;
     }
 
     String verificarIntegridad() {
