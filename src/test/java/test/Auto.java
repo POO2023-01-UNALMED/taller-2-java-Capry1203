@@ -11,7 +11,7 @@ public class Auto {
 
     int cantidadAsientos (){
         
-        int anch = asientos.lenght;
+        int anch = asientos.length;
         int contAsientos = 0;
 
         for (int i = 0 ; i < anch ; i++){
@@ -21,10 +21,29 @@ public class Auto {
                 contAsientos++;
             }
         }
+        return contAsientos;
     }
 
     String verificarIntegridad() {
+//deficion de variables a usar
+
+        int regAuto = registro;
+        int regMotor = motor.registro;
+        int cont = asientos.length;
+
+        for ( int i = 0 ; i < cont ; i++ ){
+            if (asientos[i] != null ){
+                if (asientos[i].registro != regMotor){
+                    return "Las piezas no son originales";
+                }
+            
+                if (asientos[i].registro != regAuto){
+                return "Las piezas no son originales";
+                }
+            }
+        }
         
+        return "Auto original";
     }
 
 }
