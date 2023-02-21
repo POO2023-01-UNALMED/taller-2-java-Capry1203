@@ -18,7 +18,7 @@ public class Auto {
             if (asientos[i] == null ){
                 contadorAsientos = contadorAsientos;
             } else{
-                contAsientos++;
+                contadorAsientos++;
             }
         }
         return contadorAsientos;
